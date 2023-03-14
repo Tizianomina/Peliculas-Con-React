@@ -32,7 +32,7 @@ export const DescriptionMovie = () => {
               <p className="description-movie--p">{movie.title}</p>
               <h2 className="description-movie--text">descripcion:</h2>
               <p className="description-movie--p">{movie.overview}</p>
-              <Link to={movie.homepage} className="description-movie--link">{movie.homepage ? <p className="urlTrue">La puedes disfrutar haciendo clic aquí</p> : <p className="urlFalse">La url no existe por el momento, intente más tarde</p>}</Link>
+              <Link to={movie.homepage} className="description-movie--link">{movie.homepage ? <p className="urlTrue">La puedes disfrutar haciendo clic aquí</p> : <p className="urlFalse">La url no existe por el momento</p>}</Link>
               
               
             </article>
