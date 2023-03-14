@@ -27,11 +27,11 @@ export const GaleryMovie = () => {
         <article className="galery-grilla">
           {data?.results?.map((movie) => (
             <div className="galery-movie" key={movie.id}>
-              <img
-                src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`}
-                className="galery-movie--img"
-              />
               <Link to={`/caracteristica-pelicula/${movie.id}`}>
+                <img
+                  src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`}
+                  className="galery-movie--img"
+                />
                 <p className="galery-movie--title">{movie.title}</p>
               </Link>
             </div>
@@ -47,6 +47,3 @@ export const GaleryMovie = () => {
     </>
   );
 };
-{
-  /*  */
-}
